@@ -1,18 +1,22 @@
 import React from 'react';
-
-interface BannerProps {
-    children: React.ReactNode
-}
-
-const Banner: React.FC<BannerProps> = ({ children }) => {
+import './index.scss'
+import { ReactComponent as BammerShip } from './banner.svg';
+const Banner: React.FC = () => {
     return (
-        <div>
-            <div className="text">
-                <h1>SapceX</h1>
-                <p>discripation</p>
+        <div className="flex justify-between items-center h-screen bg-black p-6 bg-cover bg-no-repeat bg-center"
+            style={{ background: 'url(background.jpg)'}}
+        >            
+            <div className="w-1/2">
+                <div className="animate-pulse">
+                    <h1 className="font-bold text-9xl text-violet-500 mb-12">SapceX</h1>
+                </div>
+                <div>
+                    <h4 className="font-bold text-xl text-gray-300 mb-3">Search About Capsules</h4>
+                    <p className="font-bold text-gray-500 max-w-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolorum blanditiis repellat beatae? Reprehenderit eaque at ex alias id excepturi mollitia aspernatur. Ratione vitae nihil ab enim ipsum consectetur distinctio adipisci dolorem ad nesciunt, aliquid aspernatur.</p>
+                </div>
             </div>
-            <div className="search-input">
-                {children}
+            <div className="animate-bounce w-1/2 flex items-center">
+                <BammerShip />
             </div>
         </div>
     );

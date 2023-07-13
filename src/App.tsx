@@ -4,9 +4,7 @@ import SearchForm from "./components/SearchForm";
 function App() {
   return (
     <div className="App">
-      <Banner>
-        <SearchForm />
-      </Banner>
+      <Banner/>
       {/* Banner */}
       {/* Search Form */}
       {/* Data Grid */}

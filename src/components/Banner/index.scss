@@ -1,0 +1,19 @@
+/* Define the animation keyframes */
+@keyframes bounce {
+    0%{
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+  }
+  
+  /* Apply the animation to the element */
+  .animate-bounce {
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
