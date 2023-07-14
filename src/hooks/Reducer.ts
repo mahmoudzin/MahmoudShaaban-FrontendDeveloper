@@ -12,7 +12,7 @@ type InitialState = {
   export const initialState: InitialState = {
     data: [],
     item: null,
-    filter: "",
+    filter: "status",
     query: "",
     pageNumber: 1,
     total: 0,
